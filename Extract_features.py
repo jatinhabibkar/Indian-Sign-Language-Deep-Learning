@@ -51,9 +51,9 @@ ret,back=cap.read()
 back=back[0:400,40:400]
 #sback=skinback(back)
 back=cv2.cvtColor(back,cv2.COLOR_BGR2GRAY)
-hs,ss,vs=np.load("[h,s,v]histskin.npy")
+hs,ss,vs=np.load("histskin.npy")
 sums=np.sum(hs)
-hn,sn,vn=np.load("[h,s,v]histnonskin.npy")
+hn,sn,vn=np.load("histnonskin.npy")
 sumn=np.sum(hn)
 cv2.imshow("back",back)
 
